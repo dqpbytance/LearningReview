@@ -4,10 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_fourth"
+
+    <Button
+        android:id="@+id/send_request"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="fourth"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:text="请求服务器，获取学生数据"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_student_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
