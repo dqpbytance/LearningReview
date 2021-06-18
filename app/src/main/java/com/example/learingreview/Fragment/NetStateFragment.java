@@ -13,11 +13,12 @@ import com.example.learingreview.R;
 public class NetStateFragment extends Fragment {
     public View onCreateView( LayoutInflater inflater, ViewGroup container,  Bundle savedInstanceState) {
         View view =inflater.inflate(R.layout.fragment_netstate,container,false);
+//        System.out.println(getClass().toString());
         return view;
     }
-//    @Override
-//    public void onResume() {
-//        super.onResume();
-//        Log.d("TAG", "onResume:NetStateFragment ");
-//    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        System.out.println(getClass().toString());
+    }
 }

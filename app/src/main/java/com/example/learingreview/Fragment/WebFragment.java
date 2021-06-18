@@ -19,9 +19,9 @@ public class WebFragment extends Fragment {
         return view;
     }
 
-//    @Override
-//    public void onResume() {
-//        super.onResume();
-//        Log.d("TAG", "onResume:WebFragment ");
-//    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        System.out.println(getClass().toString());
+    }
 }

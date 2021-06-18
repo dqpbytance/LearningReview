@@ -15,10 +15,9 @@ public class SaveFragment extends Fragment {
         View view =inflater.inflate(R.layout.fragment_save,container,false);
         return view;
     }
-
-//    @Override
-//    public void onResume() {
-//        super.onResume();
-//        Log.d("TAG", "onResume:SaveFragment ");
-//    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        System.out.println(getClass().toString());
+    }
 }
